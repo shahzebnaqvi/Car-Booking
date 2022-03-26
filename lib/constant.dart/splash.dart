@@ -1,4 +1,5 @@
 import 'package:bookcar/screens/auth/login.dart';
+import 'package:bookcar/screens/auth/loginhome.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -24,7 +25,7 @@ class _SplashScreenState extends State<SplashScreen> {
             ElevatedButton(
                 onPressed: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Login()));
+                      MaterialPageRoute(builder: (context) => LoginHome()));
                 },
                 child: Text(" Book A Car"))
           ],

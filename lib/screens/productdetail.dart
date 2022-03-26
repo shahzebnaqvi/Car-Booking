@@ -64,18 +64,30 @@ class _ProductdetailState extends State<Productdetail> {
                 // shape: BoxShape.circle,
               ),
             ),
-            FadedScaleAnimation(Container(
-                margin: EdgeInsets.only(
-                    left: MediaQuery.of(context).size.width * 0.03),
-                child: Text(
-                  '${widget.productprice}',
-                  style: TextStyle(
-                      fontSize: MediaQuery.of(context).size.width * 0.08,
-                      fontWeight: FontWeight.bold),
-                ))),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                FadedScaleAnimation(
+                  Container(
+                      margin: EdgeInsets.only(
+                          left: MediaQuery.of(context).size.width * 0.08),
+                      child: Text(
+                        '${widget.productprice}',
+                        style: TextStyle(
+                            fontSize: MediaQuery.of(context).size.width * 0.08,
+                            fontWeight: FontWeight.bold),
+                      )),
+                ),
+                Container(
+                    margin: EdgeInsets.all(
+                      MediaQuery.of(context).size.width * 0.08,
+                    ),
+                    child: Icon(Icons.favorite_outline))
+              ],
+            ),
             Container(
                 margin: EdgeInsets.only(
-                    left: MediaQuery.of(context).size.width * 0.03),
+                    left: MediaQuery.of(context).size.width * 0.08),
                 child: Text(
                   "${widget.productname}",
                   style: TextStyle(
@@ -84,9 +96,10 @@ class _ProductdetailState extends State<Productdetail> {
                 )),
             Container(
                 margin: EdgeInsets.only(
-                    left: MediaQuery.of(context).size.width * 0.03),
+                    left: MediaQuery.of(context).size.width * 0.08,
+                    right: MediaQuery.of(context).size.width * 0.06),
                 child: Text(
-                  "daaaiasjmo aooasko oaskasoko iashihi ijias josjta daaaiasjmo aooasko oaskasoko iashihi ijias josjta",
+                  "daaaiasjmo aooasko oaskas oko iashihi ijias josjta daaaiasjmo aooasko oaskasoko iashihi ijias josjta",
                   style: TextStyle(
                       fontSize: MediaQuery.of(context).size.width * 0.05,
                       fontWeight: FontWeight.normal),
