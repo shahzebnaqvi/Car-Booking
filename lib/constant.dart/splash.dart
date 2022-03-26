@@ -4,6 +4,7 @@ import 'package:bookcar/constant.dart/constant.dart';
 import 'package:bookcar/screens/auth/login.dart';
 import 'package:bookcar/screens/auth/loginhome.dart';
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -33,7 +34,9 @@ class _SplashScreenState extends State<SplashScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image(image: AssetImage("assets/car1.png")),
+            Container(
+                height: MediaQuery.of(context).size.width * 0.5,
+                child: Lottie.asset("assets/lottiefile/car.json")),
           ],
         ),
       ),
