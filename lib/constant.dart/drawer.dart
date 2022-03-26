@@ -1,6 +1,9 @@
 import 'package:animation_wrappers/animation_wrappers.dart';
 import 'package:bookcar/constant.dart/constant.dart';
+import 'package:bookcar/screens/auth/login.dart';
 import 'package:bookcar/screens/home.dart';
+import 'package:bookcar/screens/payment.dart';
+import 'package:bookcar/screens/profile.dart';
 import 'package:flutter/material.dart';
 
 class Tile {
@@ -17,8 +20,9 @@ class MyDrawer extends StatelessWidget {
     // Tile(context.getTranslationOf('account_details'), Icons.person_outlined,
     //     HomePage()),
     List<Tile> tiles = [
-      Tile("all_orders", Icons.next_plan, Home()),
-      Tile("all_orders", Icons.next_plan, Home()),
+      Tile("My Cart", Icons.next_plan, Payment()),
+      Tile("Profile", Icons.next_plan, Profile()),
+      Tile("Logout", Icons.next_plan, Login()),
     ];
     return Drawer(
       child: Scaffold(
