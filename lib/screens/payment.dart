@@ -52,15 +52,24 @@ class _PaymentState extends State<Payment> {
                         Text("3999"),
                       ],
                     ),
-                    Container(
-                      margin: EdgeInsets.only(
-                          left: MediaQuery.of(context).size.width * 0.3),
-                      child: Icon(Icons.add),
+                    InkWell(
+                      onTap: () {},
+                      child: Container(
+                        margin: EdgeInsets.only(
+                            left: MediaQuery.of(context).size.width * 0.3),
+                        child: Icon(Icons.add),
+                      ),
                     ),
-                    Container(
-                      margin: EdgeInsets.only(
-                          left: MediaQuery.of(context).size.width * 0.03),
-                      child: Icon(Icons.cancel),
+                    InkWell(
+                      onTap: () {
+                        productController
+                            .removetocart(productController.mycart[index]);
+                      },
+                      child: Container(
+                        margin: EdgeInsets.only(
+                            left: MediaQuery.of(context).size.width * 0.03),
+                        child: Icon(Icons.cancel),
+                      ),
                     ),
                   ]);
                 }),

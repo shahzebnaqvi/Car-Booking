@@ -10,4 +10,11 @@ class ProductController extends GetxController {
     print(mycart);
     update();
   }
+
+  removetocart(var productid) {
+    mycart.remove(productid);
+    mycart.sort();
+    print(mycart);
+    update();
+  }
 }

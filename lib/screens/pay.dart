@@ -2,6 +2,7 @@ import 'package:bookcar/constant.dart/constant.dart';
 import 'package:bookcar/screens/auth/forgetpass.dart';
 import 'package:bookcar/screens/auth/signup.dart';
 import 'package:bookcar/screens/home.dart';
+import 'package:bookcar/screens/payed.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
@@ -141,12 +142,12 @@ class _PayState extends State<Pay> {
               ),
           onPressed: () {
             Navigator.push(
-                context, MaterialPageRoute(builder: (context) => Home()));
+                context, MaterialPageRoute(builder: (context) => Payed()));
           },
           child: Text(
             "Finish Payment",
             style: TextStyle(
-              fontSize: MediaQuery.of(context).size.width * 0.05,
+              fontSize: MediaQuery.of(context).size.width * 0.08,
             ),
           ),
         ),
