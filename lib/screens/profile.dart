@@ -1,3 +1,4 @@
+import 'package:bookcar/constant.dart/constant.dart';
 import 'package:flutter/material.dart';
 
 class Profile extends StatefulWidget {
@@ -12,8 +13,9 @@ class _ProfileState extends State<Profile> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.white,
-          iconTheme: IconThemeData(color: Colors.red),
+          title: Text('Profile'),
+          elevation: 0,
+          backgroundColor: Constants.mainColor,
         ),
         body: SingleChildScrollView(
           child: Column(children: [
@@ -45,7 +47,7 @@ Widget listbottom(tag, detail) {
   return ListTile(
     title: Text(
       tag,
-      style: TextStyle(color: Colors.orange),
+      style: TextStyle(color: Constants.mainColor),
     ),
     subtitle: Text(detail),
   );

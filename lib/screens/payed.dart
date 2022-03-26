@@ -31,15 +31,15 @@ class _PayedState extends State<Payed> {
         children: [
           Container(
               height: MediaQuery.of(context).size.width * 0.5,
-              child: Lottie.asset("assets/lottiefile/reset.json")),
+              child: Lottie.asset("assets/lottiefile/payment.json")),
           Container(
             margin: EdgeInsets.only(
               top: MediaQuery.of(context).size.height * 0.05,
             ),
             child: Text(
-              "Your Order is Payed",
+              "Your Order is Confirmed",
               style: TextStyle(
-                  fontSize: MediaQuery.of(context).size.width * 0.05,
+                  fontSize: MediaQuery.of(context).size.width * 0.07,
                   fontWeight: FontWeight.bold,
                   color: Constants.mainColor),
             ),

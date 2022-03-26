@@ -147,7 +147,7 @@ class _PayState extends State<Pay> {
           child: Text(
             "Finish Payment",
             style: TextStyle(
-              fontSize: MediaQuery.of(context).size.width * 0.08,
+              fontSize: MediaQuery.of(context).size.width * 0.04,
             ),
           ),
         ),
