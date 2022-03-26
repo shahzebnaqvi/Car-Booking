@@ -53,7 +53,12 @@ class _PaymentState extends State<Payment> {
                       ],
                     ),
                     InkWell(
-                      onTap: () {},
+                      onTap: () {
+                        setState(() {
+                          productController
+                              .addtocart(productController.mycart[index]);
+                        });
+                      },
                       child: Container(
                         margin: EdgeInsets.only(
                             left: MediaQuery.of(context).size.width * 0.3),
@@ -62,8 +67,10 @@ class _PaymentState extends State<Payment> {
                     ),
                     InkWell(
                       onTap: () {
-                        productController
-                            .removetocart(productController.mycart[index]);
+                        setState(() {
+                          productController
+                              .removetocart(productController.mycart[index]);
+                        });
                       },
                       child: Container(
                         margin: EdgeInsets.only(

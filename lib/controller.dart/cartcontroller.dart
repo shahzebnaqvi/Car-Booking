@@ -17,4 +17,11 @@ class ProductController extends GetxController {
     print(mycart);
     update();
   }
+
+  favtocart(var productid) {
+    mycart.remove(productid);
+    mycart.sort();
+    print(mycart);
+    update();
+  }
 }
