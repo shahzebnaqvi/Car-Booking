@@ -1,3 +1,4 @@
+import 'package:bookcar/constant.dart/constant.dart';
 import 'package:bookcar/screens/auth/login.dart';
 import 'package:bookcar/screens/auth/loginhome.dart';
 import 'package:flutter/material.dart';
@@ -15,6 +16,7 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
     return Scaffold(
+      backgroundColor: Constants.mainColor,
       body: Container(
         width: screenSize.width,
         height: screenSize.height,
