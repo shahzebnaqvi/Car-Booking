@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:bookcar/constant.dart/constant.dart';
 import 'package:bookcar/screens/auth/login.dart';
 import 'package:bookcar/screens/auth/loginhome.dart';
@@ -12,6 +14,14 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
+  void initState() {
+    super.initState();
+    Timer(
+        Duration(seconds: 10),
+        () => Navigator.pushReplacement(
+            context, MaterialPageRoute(builder: (context) => LoginHome())));
+  }
+
   @override
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
@@ -24,12 +34,6 @@ class _SplashScreenState extends State<SplashScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image(image: AssetImage("assets/car1.png")),
-            ElevatedButton(
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => LoginHome()));
-                },
-                child: Text(" Book A Car"))
           ],
         ),
       ),

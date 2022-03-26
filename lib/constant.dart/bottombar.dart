@@ -1,4 +1,8 @@
+import 'dart:io';
+
 import 'package:bookcar/constant.dart/constant.dart';
+import 'package:bookcar/screens/payment.dart';
+import 'package:bookcar/screens/profile.dart';
 import 'package:flutter/material.dart';
 
 class bottombar extends StatelessWidget {
@@ -23,20 +27,21 @@ class bottombar extends StatelessWidget {
           ),
         ),
         InkWell(
+          onTap: () {
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => Payment()));
+          },
           child: Icon(
-            Icons.search_rounded,
+            Icons.shopping_cart_checkout,
             size: 30,
             color: Colors.white,
           ),
         ),
         InkWell(
-          child: Icon(
-            Icons.pages_rounded,
-            size: 30,
-            color: Colors.white,
-          ),
-        ),
-        InkWell(
+          onTap: () {
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => Profile()));
+          },
           child: Icon(
             Icons.person_rounded,
             size: 30,
