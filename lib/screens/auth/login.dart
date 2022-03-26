@@ -40,7 +40,7 @@ class _LoginState extends State<Login> {
                       top: MediaQuery.of(context).size.height * 0.05),
                   alignment: Alignment.bottomLeft,
                   child: Text(
-                    'Sign In ',
+                    'Sign In',
                     style: TextStyle(
                         fontSize: MediaQuery.of(context).size.width * 0.1,
                         fontWeight: FontWeight.bold),

@@ -32,7 +32,7 @@ class _ProductdetailState extends State<Productdetail> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('${widget.productname}'),
+        title: Text('Standard'),
         elevation: 0,
         backgroundColor: Constants.mainColor,
       ),
@@ -72,7 +72,7 @@ class _ProductdetailState extends State<Productdetail> {
                       margin: EdgeInsets.only(
                           left: MediaQuery.of(context).size.width * 0.08),
                       child: Text(
-                        '${widget.productprice}',
+                        '405 rs',
                         style: TextStyle(
                             fontSize: MediaQuery.of(context).size.width * 0.08,
                             fontWeight: FontWeight.bold),
@@ -89,9 +89,9 @@ class _ProductdetailState extends State<Productdetail> {
                 margin: EdgeInsets.only(
                     left: MediaQuery.of(context).size.width * 0.08),
                 child: Text(
-                  "${widget.productname}",
+                  "Standard",
                   style: TextStyle(
-                      fontSize: MediaQuery.of(context).size.width * 0.04,
+                      fontSize: MediaQuery.of(context).size.width * 0.05,
                       fontWeight: FontWeight.bold),
                 )),
             Container(

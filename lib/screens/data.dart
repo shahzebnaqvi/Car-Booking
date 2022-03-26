@@ -35,7 +35,7 @@ final List<String> imgList = [
   'https://images.unsplash.com/photo-1508704019882-f9cf40e475b4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8c6e5e3aba713b17aa1fe71ab4f0ae5b&auto=format&fit=crop&w=1352&q=80',
   'https://images.unsplash.com/photo-1519985176271-adb1088fa94c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a0c8d632e977f94e5d312d9893258f59&auto=format&fit=crop&w=1355&q=80'
 ];
-var Hometitle = ["nnkd", "dksdnk sdasd", "djlsdn", "dssdjsdn"];
+var Hometitle = ["Vip", "Mini", "Standard", "Business"];
 var Homeicon = [
   Icons.report_gmailerrorred_outlined,
   Icons.calendar_today,
